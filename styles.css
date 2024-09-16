@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    background-image: url('img/fon1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white; 
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(71, 71, 71, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(231, 225, 225, 0.1);
+
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+#contacto ul li {
+    margin: 5px 0;
+    
+}
+
+#contacto ul li a {
+    color: #4CAF50;
+    text-decoration: gold;
+    font-weight: bold;
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+#galeria .family-photo1 {
+    width: 100%;
+    right: 100%;
+    height: 300px;
+    max-width: 450px;
+    margin: 5%;
+    border: 4px solid #000; 
+    transition: transform 0.3s ease;
+}
+
+#galeria .family-photo2 {
+    width: 100%;
+    max-width: 450px;
+    right: 100%;
+    height: 300px;
+    margin: 5%;
+    border: 4px solid #000;
+    transition: transform 0.3s ease;
+}
+
+#galeria .family-photo1 {
+    transform: rotate(-5deg); 
+}
+
+#galeria .family-photo2 {
+    transform: rotate(5deg);
+}
+
+#galeria .family-photo1:hover, #galeria .family-photo2:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1mm;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
